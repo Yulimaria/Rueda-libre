@@ -1,0 +1,3 @@
+//html cumple con la funcion de ser el esqueleto del archivo
+
+// css cumple la funcionn de dar estilos al archivo
