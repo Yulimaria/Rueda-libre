@@ -1,3 +1,16 @@
 //html cumple con la funcion de ser el esqueleto del archivo
 
 // css cumple la funcionn de dar estilos al archivo
+URL de solicitud
+http://127.0.0.1:5500/Rueda-libre/index.html
+host
+127.0.0.1:5500
+Código de estado
+304 Not Modified
+puerto 5500
+
+Ruta Inexistente: promociones.html
+Código de estado
+404 Not Found
+Dirección remota
+127.0.0.1:5500
