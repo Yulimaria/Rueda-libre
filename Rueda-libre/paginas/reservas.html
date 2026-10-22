@@ -41,8 +41,64 @@
           </div>
     
            <button type="submit">Reservar</button>
-        </form>
-    </section>
+
+    <section id="formulario de alquiler "></section> 
+        <h2>Tu alquiler</h2>
+         <!-- Contenedor para la Fecha de Entrada -->
+        <div class="form-group">
+          <label for="fecha-llegada">Fecha del alquiler</label>
+          <input type="date" id="fecha-llegada" name="fecha_llegada" required>
+        </div>
+
+        <div class="form-group">
+            <label for=" Tipo-de-bicicleta">Tipo de bicicleta:</label>
+        <select name="Tipo_de_bicicleta" id="Tipo-de-bicicleta" required> 
+                <option value="" disabled selected> Selecciona una opcion...</option>
+                  <!-- Opciones del menú desplegable -->
+                   <option value="Urbana"> Urbana </option>
+                   <option value="Montaña"> Montaña </option>
+                   <option value="Electrica"> Electrica </option>
+        </div>
+        </select>
+
+        <div class="form-group">
+            <label for="Plan">plan:</label>
+        <select name="Plan" id="plan" required>
+                <option value="" disabled selected> Selecciona una opcion...</option>
+                <option value="1 hora"> 1 hora</option>
+                <option value="Medio dia"> Medio día</option>
+                <option value="Día completo"> Día completo</option>  
+        </select>
+        </div>
+
+        <div class="Cantidad de bicicletas">
+            <label for="Texto"> Cantidad de bicicletas:</label>
+            <input type="text" id="Cantidad_de_bicicletas" name="Cantidad_de_bicicletas"> 
+        </div>
+
+        <div class="form-group">
+            <label for="Recorrido">Recorrido:</label>
+        <select name="Recorrido" id="recorrido" required>
+             <option value="" disabled selected> Selecciona una opcion...</option>
+             <option value="Rio parques">Rio parques</option>
+             <option value="Sabores de Barrio">Sabores de Barrio</option>
+             <option value="Reto las palmas">Reto las palmas</option>
+             <option value="Ninguno">Ninguno</option>
+            
+        </select>
+        </div>
+     </section>
+     <section id="Adicional">
+        <h2>Informacion Adicional</h2>
+        <div class="form-group">
+            <label for="comentarios">comentarios</label>
+            <input type="text" id="comentarios" name="comentarios">
+            
+
+        </div>
+
+
+     </section>
 
 <body>
       <address class="contacto-footer">
