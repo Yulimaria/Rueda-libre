@@ -21,33 +21,32 @@
 
          <!-- Campo de Texto para el Nombre documento correo y telefono -->
           <div class="form-group">
-            <label for="text">Nombre:</label>
-            <input type="text" id="nombre" name="nombre">
+            <label for="text">Nombre: </label>
+            <input type="text" id="nombre" name="nombre" minlength="3" required placeholder="Ingresar min 3 caracteres">
           </div>
           
           <div class="form-group">
            <label for="text">Numero de documento:</label>
-            <input type="text" id="Numero de documento" name="Numero de documento">
+            <input type="text" id="Numero de documento" name="Numero de documento" minlength="6" maxlength="10" placeholder="Entre 6 a 10 digitos">
           </div>
           
             <div class="form-group">
            <label for="text">Telefono:</label>
-            <input type="text" id="Telefono" name="Telefono">
+            <input type="tel" id="celular" name="celular" required minlength="10" maxlength="10" pattern="3[0-9]{9}">
           </div>
 
            <div class="form-group">
            <label for="text">Correo:</label>
-            <input type="text" id="Correo" name="Correo">
+            <input type="email" id="Correo" name="Correo" placeholder="ejemplo@correo.com"
+    required> 
           </div>
-    
-           <button type="submit">Reservar</button>
-
-    <section id="formulario de alquiler "></section> 
+    </section>
+    <section id="formulario de alquiler "> 
         <h2>Tu alquiler</h2>
          <!-- Contenedor para la Fecha de Entrada -->
         <div class="form-group">
           <label for="fecha-llegada">Fecha del alquiler</label>
-          <input type="date" id="fecha-llegada" name="fecha_llegada" required>
+          <input type="date" id="Fecha" name="fecha" required min="2026-11-01" max="2026-12-31">
         </div>
 
         <div class="form-group">
@@ -58,9 +57,9 @@
                    <option value="Urbana"> Urbana </option>
                    <option value="Montaña"> Montaña </option>
                    <option value="Electrica"> Electrica </option>
-        </div>
         </select>
-
+        </div>
+        
         <div class="form-group">
             <label for="Plan">plan:</label>
         <select name="Plan" id="plan" required>
@@ -73,7 +72,7 @@
 
         <div class="Cantidad de bicicletas">
             <label for="Texto"> Cantidad de bicicletas:</label>
-            <input type="text" id="Cantidad_de_bicicletas" name="Cantidad_de_bicicletas"> 
+            <input type="text" id="Cantidad_de_bicicletas" name="Cantidad_de_bicicletas"required min="1" max="6"> 
         </div>
 
         <div class="form-group">
@@ -84,33 +83,30 @@
              <option value="Sabores de Barrio">Sabores de Barrio</option>
              <option value="Reto las palmas">Reto las palmas</option>
              <option value="Ninguno">Ninguno</option>
-            
         </select>
         </div>
-     </section>
-     <section id="Adicional">
+    </section>
+
+    <section id="Adicional">
         <h2>Informacion Adicional</h2>
         <div class="form-group">
             <label for="comentarios">comentarios</label>
-            <input type="text" id="comentarios" name="comentarios">
-            
+            <input type="text" id="comentarios" name="comentarios" maxlength="300">
+         </div>
+            <label for="Terminos&condiciones">Terminos & condiciones</label>
+            <input type="checkbox" name="Terminos_condiciones" id="Terminos_condiciones" required>    
+    </section>
+    <button type="submit">Reservar</button>
+     <footer> 
+        <address class="contacto-footer">
+          <h4>Contacto</h4>
+          <p>📧 Correo: <a href="mailto:soporte@tuweb.com">soporte@tuweb.com</a></p>
+          <p>📞 Teléfono: <a href="tel:+123456789">+1 234 567 89</a></p>
+          <p>📍 Medellín, Colombia</p>
+        </address>
 
-        </div>
-
-
-     </section>
-
-<body>
-      <address class="contacto-footer">
-     <h4>Contacto</h4>
-     <p>📧 Correo: <a href="mailto:soporte@tuweb.com">soporte@tuweb.com</a></p>
-     <p>📞 Teléfono: <a href="tel:+123456789">+1 234 567 89</a></p>
-     <p>📍 Medellín, Colombia</p>
-  </address>
-  <div class="copyright">
-    <p>&copy; 2026 Tu Nombre/Empresa. Todos los derechos reservados.</p>
-  </div>
-
-</footer>
-</body>
+         <div class="copyright">
+          <p>&copy; 2026 Tu bicileta. Todos los derechos reservados.</p>
+         </div>
+     </footer>
 </html>
