@@ -25,3 +25,14 @@ N.º	Campo	Dato de prueba	Resultado esperado	                                  R
 6	Celular	    30012345	    Rechazar porque tiene menos de 10 dígitos.	          Probada ✓
 7	Fecha del alquiler	       2026-10-25	antes del 1 de noviembre.	              Probada ✓
 8	Fecha del alquiler	       2027-01-05	está después del 31 de diciembre.         Probada ✓
+
+
+Se corrigen las rutas de acceso ya que aparecian locales
+//Mapa de uso de color
+### Evaluación de contraste de la paleta de Rueda Libre
+
+Se evaluaron ocho combinaciones de colores utilizando sus códigos hexadecimales y el criterio WCAG 2.2 para accesibilidad visual. Seis combinaciones cumplen el nivel AA para texto normal, con una relación mínima de 4,5:1.
+
+Las combinaciones de blanco sobre Naranja Pedal (2,22:1) y Naranja Pedal sobre Crema (2,06:1) no cumplen el contraste mínimo requerido para texto normal. Se recomienda utilizar Azul Noche sobre Naranja Pedal para botones secundarios y reservar el naranja para elementos decorativos o destacados que no dependan únicamente del color para transmitir información.
+
+Las demás combinaciones evaluadas cumplen el nivel AA para texto normal. La selección final debe considerar tanto la legibilidad como la identidad visual de la marca.

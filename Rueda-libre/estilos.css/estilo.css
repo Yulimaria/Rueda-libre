@@ -1,0 +1,30 @@
+:root {
+    --verde-ruta: #1E7A4F;
+    --naranja-pedal: #c28a45;
+    --azul-noche: #14213D;
+    --crema: #FAF6EF;
+    --gris-asfalto: #5B6470;
+}
+body {
+    background-color: var(--crema);
+    color: var(--azul-noche);
+
+}
+
+
+header {
+    background-color: var(--azul-noche);
+    color: #FFFFFF;
+}
+
+
+button,
+.boton-principal {
+    background-color: var(--verde-ruta);
+    color: #FFFFFF;
+}
+
+.boton-secundario {
+    background-color: var(--naranja-pedal);
+    color: var(--azul-noche);
+}
