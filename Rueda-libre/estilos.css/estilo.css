@@ -1,20 +1,38 @@
 :root {
+    /* colores de marca*/
     --verde-ruta: #1E7A4F;
     --naranja-pedal: #c28a45;
     --azul-noche: #14213D;
     --crema: #FAF6EF;
     --gris-asfalto: #5B6470;
+
+    /*familias tipograficas*/
+    --fuente-titulos:"Montserrat", Arial, sans-serif;
+    --fuente-texto:"open sans", arial, sans-serif;
+
+    /*escalado de espaciado */
+    --espacio-pequeno: 0.5rem;
+    --espacio-mediano: 1rem;
+    --espacio-grande: 2rem;
+    --espacio-pequeno: 0.5rem;
 }
 body {
     background-color: var(--crema);
     color: var(--azul-noche);
-
+    font-family: var(--fuente-texto);
+  
+   
 }
-
+ h1,h2,h3,h4 {
+     font-family: "Montserrat", sans-serif;
+     font-weight: 700;
+    
+    }
 
 header {
     background-color: var(--azul-noche);
     color: #FFFFFF;
+    align-items: center;
 }
 
 

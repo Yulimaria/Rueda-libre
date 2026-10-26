@@ -36,3 +36,19 @@ Se evaluaron ocho combinaciones de colores utilizando sus códigos hexadecimales
 Las combinaciones de blanco sobre Naranja Pedal (2,22:1) y Naranja Pedal sobre Crema (2,06:1) no cumplen el contraste mínimo requerido para texto normal. Se recomienda utilizar Azul Noche sobre Naranja Pedal para botones secundarios y reservar el naranja para elementos decorativos o destacados que no dependan únicamente del color para transmitir información.
 
 Las demás combinaciones evaluadas cumplen el nivel AA para texto normal. La selección final debe considerar tanto la legibilidad como la identidad visual de la marca.
+
+Actividad: Herencia en CSS
+
+Propiedad heredada: color.
+En DevTools comprobé que el párrafo utiliza el color
+rgb(20, 33, 61), correspondiente al azul noche (#14213D)
+definido en el body.
+
+Propiedad no heredada: margin-bottom.
+Los márgenes del párrafo se calculan a partir de sus
+propios estilos y no se heredan del body.
+
+Aprendizaje:
+La herencia permite que propiedades como color y
+font-family pasen del elemento padre a sus hijos.
+Propiedades como margin-bottom no se heredan normalmente.
