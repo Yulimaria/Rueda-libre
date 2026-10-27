@@ -52,3 +52,6 @@ Aprendizaje:
 La herencia permite que propiedades como color y
 font-family pasen del elemento padre a sus hijos.
 Propiedades como margin-bottom no se heredan normalmente.
+
+------------------------------------------------------------------------------------------------------------
+Reto 10 navegacion con estados y sin conflico
