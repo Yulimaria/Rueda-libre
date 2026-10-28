@@ -63,3 +63,7 @@ Se utilizó DevTools para inspeccionar las reglas CSS y comprobar cuál selector
 
 ------------------------------------------------------------------------------------------------------------
 Reto 10 navegacion con estados y sin conflico
+
+reto 12
+Se revisó y organizó el CSS de Rueda Libre por secciones, se quitaron reglas duplicadas o sin uso y se corrigieron algunos selectores. También se verificó que las tres páginas enlazaran la misma hoja de estilos y se ajustaron las rutas para cada ubicación.
+Se limitó el ancho de las imágenes para evitar que ocuparan toda la página, y se ordenó el menú principal en vertical. En la página de inicio, la sección Nuestros servicios quedó organizada en tarjetas sin viñetas; el enlace a tarifas ahora aparece junto a “Rutas guiadas” y la promoción de bicicletas eléctricas está integrada en la lista.

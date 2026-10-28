@@ -1,114 +1,184 @@
+/* ==================== Variables de marca ==================== */
 :root {
-    /* colores de marca*/
     --verde-ruta: #1E7A4F;
     --naranja-pedal: #c28a45;
     --azul-noche: #14213D;
     --crema: #FAF6EF;
     --gris-asfalto: #5B6470;
 
-    /*familias tipograficas*/
-    --fuente-titulos:"Montserrat", Arial, sans-serif;
-    --fuente-texto:"open sans", arial, sans-serif;
+    --fuente-titulos: "Montserrat", Arial, sans-serif;
+    --fuente-texto: "Open Sans", Arial, sans-serif;
 
-    /*escalado de espaciado */
     --espacio-pequeno: 0.5rem;
     --espacio-mediano: 1rem;
     --espacio-grande: 2rem;
-    --espacio-pequeno: 0.5rem;
 }
+
+/* ==================== Base y tipografía ==================== */
+* {
+    box-sizing: border-box;
+}
+
 body {
+    margin: 0;
     background-color: var(--crema);
     color: var(--azul-noche);
     font-family: var(--fuente-texto);
-  
-   
-}
- h1,h2,h3,h4 {
-     font-family: "Montserrat", sans-serif;
-     font-weight: 700;
-     }
-
-    h1{
-        text-align: center;
-    } 
-
-header {
-    background-color: var(--azul-noche);
-    color: #FFFFFF;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
-
-
-button,
-.boton-principal {
-    background-color: var(--verde-ruta);
-    color: #FFFFFF;
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--fuente-titulos);
+    font-weight: 700;
 }
 
-.boton-secundario {
-    background-color: var(--naranja-pedal);
-    color: var(--azul-noche);
-}
-
-link{
+h1 {
     text-align: center;
-}
-
-.activo{
-    color: hsl(309, 22%, 71%);
-}
-
-nav a{
-    text-decoration: none;
-    }
-
-nav a:hover{
-    
-    background-color: rgb(195, 230, 230);
-    
-}
-nav a:focus{
-    outline:2px color #c28a45
-    
-}
-
- /*el asterisco es selector universal */
-*{
-    box-sizing: border-box;
 }
 
 main {
     max-width: 70rem;
-    margin:  0 auto;
+    margin: 0 auto;
+    padding: var(--espacio-grande) var(--espacio-mediano) 5rem;
 }
 
-#servicios li {
-padding: var (--espacio-mediano);
-border: 1px solid var(--verde-ruta);
-border-radius: 8px;
-
+/* ==================== Encabezado y navegación ==================== */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--espacio-mediano);
+    padding: var(--espacio-grande) var(--espacio-mediano);
+    background-color: var(--azul-noche);
+    color: #FFFFFF;
+    text-align: center;
 }
 
-[id="¿Quienes somos?"] img {
-    width: 100%;
-    
-}   
-
-[ id="Como alquilar?"] img{
-    width: 100%;
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--espacio-mediano);
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
+header nav ul {
+    flex-direction: column;
+    align-items: center;
+}
+
+nav a {
+    color: inherit;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus-visible {
+    background-color: rgb(195, 230, 230);
+    color: var(--azul-noche);
+}
+
+nav a:focus-visible {
+    outline: 2px solid var(--naranja-pedal);
+    outline-offset: 3px;
+}
+
+.activo {
+    color: hsl(309, 22%, 85%);
+}
+
+/* ==================== Servicios y destacados ==================== */
+.lista-servicios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--espacio-mediano);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.lista-servicios > li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--espacio-mediano);
+    min-height: 4.5rem;
+    padding: var(--espacio-mediano);
+    border: 1px solid rgb(30 122 79 / 25%);
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 8px rgb(20 33 61 / 8%);
+}
+
+.lista-servicios > .tarjeta {
+    position: relative;
+    display: block;
+    grid-column: 1 / -1;
+    min-height: auto;
+    padding: var(--espacio-grande);
+    padding-right: 6rem;
+    background-color: #F0F7F2;
+}
+
+.lista-servicios .tarjeta h3,
+.lista-servicios .tarjeta p {
+    margin: 0;
+}
+
+.lista-servicios .tarjeta p {
+    margin-top: var(--espacio-pequeno);
+}
+
+.enlace-servicio {
+    flex-shrink: 0;
+    padding: 0.55rem 0.85rem;
+    border-radius: 6px;
+    background-color: var(--verde-ruta);
+    color: #FFFFFF;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.enlace-servicio:hover,
+.enlace-servicio:focus-visible {
+    background-color: var(--azul-noche);
+    color: #FFFFFF;
+}
+
+.electrica {
+    position: relative;
+}
+.etiqueta-nuevo {
+    position: absolute;
+    top: var(--espacio-pequeno);
+    right: var(--espacio-pequeno);
+    padding: 0.25rem 0.5rem;
+    background-color: var(--azul-noche);
+    color: #FFFFFF;
+}
+
+[id="¿Quienes somos?"] img,
+[id="Como alquilar?"] img {
+    display: block;
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* ==================== Tablas ==================== */
 table {
     width: 100%;
-    border-collapse: collapse;
     margin-bottom: var(--espacio-grande);
+    border-collapse: collapse;
 }
 
-th, td {
+th,
+td {
     padding: var(--espacio-mediano);
     border: 1px solid var(--gris-asfalto);
     text-align: left;
@@ -116,42 +186,75 @@ th, td {
 
 th {
     background-color: var(--azul-noche);
-    color: white;
-  
+    color: #FFFFFF;
 }
 
-caption{
-    margin-bottom: var(--espacio-grande);
-     margin-top: var(--espacio-mediano);
+caption {
+    margin: var(--espacio-mediano) 0 var(--espacio-grande);
 }
-label{
+
+/* ==================== Formularios y botones ==================== */
+label {
     display: block;
     margin-bottom: var(--espacio-pequeno);
 }
 
-input, selectm textarea{
+input,
+select {
     width: 100%;
     padding: var(--espacio-pequeno);
-    box-sizing: border-box;
 }
 
-form div{
-    margin-bottom: var(--espacio-mediano);  
+form div {
+    margin-bottom: var(--espacio-mediano);
 }
 
-button{
+button {
     padding: var(--espacio-mediano) var(--espacio-grande);
+    border: 0;
+    border-radius: 6px;
+    background-color: var(--verde-ruta);
+    color: #FFFFFF;
     cursor: pointer;
 }
 
-/*display: flex; coloca las opciones en una fila.
-gap crea separación entre ellas usando tu variable.
-list-style: none; elimina los puntos de la lista.
-padding: 0; elimina el espacio interior predeterminado de la lista. */
-
-#menú {
-    display: flex;
-    gap: var(--espacio-mediano);
-    list-style: none;
-    padding: 0;
+/* ==================== Pie de página ==================== */
+footer {
+    padding: var(--espacio-grande) var(--espacio-mediano) 5rem;
+    background-color: var(--azul-noche);
+    color: #FFFFFF;
+    text-align: center;
 }
+
+.contacto-footer,
+.redes-footer {
+    margin-bottom: var(--espacio-mediano);
+}
+
+/* ==================== Acceso rápido a WhatsApp ==================== */
+.whatsapp-flotante {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 1000;
+    display: inline-flex;
+    align-items: center;
+    gap: var(--espacio-pequeno);
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: var(--verde-ruta);
+    color: #FFFFFF;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.whatsapp-flotante:hover,
+.whatsapp-flotante:focus-visible {
+    background-color: var(--azul-noche);
+    color: #FFFFFF;
+}
+
+.whatsapp-flotante i {
+    font-size: 1.4rem;
+}
+
