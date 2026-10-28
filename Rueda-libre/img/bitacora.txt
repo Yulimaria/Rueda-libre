@@ -53,5 +53,13 @@ La herencia permite que propiedades como color y
 font-family pasen del elemento padre a sus hijos.
 Propiedades como margin-bottom no se heredan normalmente.
 
+1. Identificación del enlace de la página actual
+
+Se identificó el enlace correspondiente a la página actual mediante la clase activo en el HTML. Esta clase permite diferenciar visualmente la página en la que se encuentra el usuario respecto a las demás opciones del menú.
+
+2. Resolución del conflicto de especificidad
+
+Se utilizó DevTools para inspeccionar las reglas CSS y comprobar cuál selector tenía prioridad. El conflicto se corrigió ajustando los selectores, sin utilizar !important ni estilos en línea.
+
 ------------------------------------------------------------------------------------------------------------
 Reto 10 navegacion con estados y sin conflico
